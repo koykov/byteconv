@@ -1,4 +1,6 @@
-# Alloc-free conversions between bytes, strings and runes.
+# Byteconv
+
+Alloc-free conversions between bytes, strings and runes.
 
 At the moment supports the following conversion:
 * `[]byte` -> `string` using `BytesToString()/B2S()`
