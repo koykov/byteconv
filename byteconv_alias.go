@@ -1,4 +1,4 @@
-package fastconv
+package byteconv
 
 // B2S is a shorthand alias of BytesToString().
 func B2S(b []byte) string {

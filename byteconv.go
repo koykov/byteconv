@@ -1,4 +1,4 @@
-package fastconv
+package byteconv
 
 // Fast alloc-free conversion algorithms between byte sequences and strings.
 

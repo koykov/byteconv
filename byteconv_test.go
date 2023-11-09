@@ -1,4 +1,4 @@
-package fastconv
+package byteconv
 
 import (
 	"bytes"

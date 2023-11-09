@@ -1,4 +1,4 @@
-package fastconv
+package byteconv
 
 const (
 	xx = 0xF1
