@@ -3,7 +3,6 @@ package byteconv
 // Fast alloc-free conversion algorithms between byte sequences and strings.
 
 import (
-	"reflect"
 	"unicode/utf8"
 	"unsafe"
 )
@@ -15,8 +14,8 @@ func BytesToString(b []byte) string {
 
 // StringToBytes makes fast conversion of string to bytes sequence.
 func StringToBytes(s string) []byte {
-	sh := (*reflect.StringHeader)(unsafe.Pointer(&s))
-	var h reflect.SliceHeader
+	sh := (*StringHeader)(unsafe.Pointer(&s))
+	var h SliceHeader
 	h.Data = sh.Data
 	h.Len = sh.Len
 	h.Cap = sh.Len
